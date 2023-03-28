@@ -286,7 +286,7 @@ header {
     
     }
 
-@media only screen  and (max-height:590px)       
+@media (max-height:500px)       
     {
 
         body {
@@ -303,4 +303,23 @@ header {
         }
 
     }
+
+    @media  (max-width:500px)       
+    {
+
+        body {
+    
+            display: flex;
+        }
+
+        .weapper.active-popup {
+            display: flex;
+        }
+
+        .weapper {
+            top: 30px;
+        }
+
+    }
+
 
