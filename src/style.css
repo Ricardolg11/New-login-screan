@@ -28,7 +28,6 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-   
 } 
 
 .logo {
@@ -61,8 +60,8 @@ header {
 }
 
 .navigation a:hover:after {
- transform: scaleX(1);
- transform-origin: left;
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 
@@ -99,7 +98,6 @@ header {
     align-items: center;
     overflow: hidden; 
     transform: scale(0);
-    
 }
 
 .weapper.active-popup{
@@ -153,7 +151,6 @@ header {
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
-
 }
 
 .form-box h2 {
@@ -168,7 +165,6 @@ header {
     height: 50px;
     border-bottom: 2px solid rgb(148, 146, 146);
     margin: 30px 0;
-
 }
 
 .input-box label {
@@ -271,25 +267,20 @@ header {
         align-items: left;
         justify-content: center;
         display: grid;
-       
     }
     .navigation {
-       display: flex;
-      
+        display: flex;
     }
 
     .weapper {
         top: 30px;
     }
- 
-    
     }
 
 @media (max-height:500px)       
     {
 
         body {
-    
             display: flex;
         }
 
@@ -307,7 +298,6 @@ header {
     {
 
         body {
-    
             display: flex;
         }
 
