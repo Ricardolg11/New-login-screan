@@ -16,7 +16,6 @@ body{
     background-position: center;
 }
 
-
 header {
     position: fixed;
     top: 0;
@@ -62,7 +61,6 @@ header {
     transform: scaleX(1);
     transform-origin: left;
 }
-
 
 .navigation .btnLogin-popup {
     width: 130px;
@@ -217,6 +215,7 @@ header {
     accent-color:#f0e9e9;
     margin-right: 3px;
 }
+
 .remember-forgot a {
     color: #f5f3f3;
     text-decoration: none;
@@ -261,18 +260,27 @@ header {
 
 @media only screen and (max-width:700px){
     header{
+        transition: 1s;
+        font-size: 14px;
         top: -5px;
+        width: 90%;
         position: absolute;
         align-items: left;
         justify-content: center;
         display: grid;
     }
+
     .navigation {
         display: flex;
     }
 
     .weapper {
         top: 30px;
+    }
+
+    .navigation .btnLogin-popup {
+        width: 80px;
+        height: 30px;
     }
     }
 
