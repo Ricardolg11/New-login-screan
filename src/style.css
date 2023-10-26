@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 700px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +20,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     z-index: 99;
 } 
 
@@ -262,12 +262,11 @@ header {
     header{
         transition: 1s;
         font-size: 14px;
-        top: -5px;
         width: 90%;
         position: absolute;
         align-items: left;
         justify-content: center;
-        display: grid;
+        display: flex;
     }
 
     .navigation {
@@ -287,9 +286,6 @@ header {
 @media (max-height:500px)       
     {
 
-        body {
-            display: flex;
-        }
 
         .weapper.active-popup {
             display: flex;
@@ -303,10 +299,6 @@ header {
 
     @media  (max-width:500px)       
     {
-
-        body {
-            display: flex;
-        }
 
         .weapper.active-popup {
             display: flex;
