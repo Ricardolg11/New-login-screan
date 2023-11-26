@@ -5,7 +5,7 @@
     font-family: 'Proppins', sans-serif;
 }
 
-body{
+body {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -26,10 +26,10 @@ header {
     display: flex;
     justify-content: space-between;
     z-index: 99;
-} 
+}
 
 .logo {
-    font-size:  2em;
+    font-size: 2em;
     color: #ffff;
     user-select: none;
 }
@@ -41,7 +41,7 @@ header {
     text-decoration: none;
     font-weight: 500;
     margin-left: 45px;
-} 
+}
 
 .navigation a::after {
     content: '';
@@ -70,12 +70,13 @@ header {
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1,1em;
+    font-size: 1, 1em;
     color: #ffff;
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
 }
+
 .navigation .btnLogin-popup:hover {
     background: #faf9f9;
     color: #020202;
@@ -93,29 +94,29 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
     transform: scale(0);
 }
 
-.weapper.active-popup{
+.weapper.active-popup {
     transform: scale(1);
 }
 
-.weapper.active{
+.weapper.active {
     height: 450px;
 }
 
-.weapper .form-box{
+.weapper .form-box {
     width: 100%;
     padding: 40px;
 }
 
-.weapper .form-box.login{
+.weapper .form-box.login {
     transition: transform .18s ease;
     transform: translateX(0);
 }
 
-.weapper.active .form-box.login{
+.weapper.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
 }
@@ -123,15 +124,15 @@ header {
 .weapper .form-box.register {
     position: absolute;
     transition: none;
-    transform: translateX(400px) ;
+    transform: translateX(400px);
 }
 
-.weapper.active .form-box.register{
+.weapper.active .form-box.register {
     transition: transform .18s ease;
     transform: translateX(0);
 }
 
-.weapper .icon-close{
+.weapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -175,7 +176,7 @@ header {
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label{
+.input-box input:valid~label {
     top: -5px;
 }
 
@@ -209,7 +210,7 @@ header {
 }
 
 .remember-forgot label input {
-    accent-color:#f0e9e9;
+    accent-color: #f0e9e9;
     margin-right: 3px;
 }
 
@@ -254,8 +255,8 @@ header {
     text-decoration: underline;
 }
 
-@media only screen and (max-width:700px){
-    header{
+@media only screen and (max-width:700px) {
+    header {
         transition: 1s;
         font-size: 14px;
         width: 90%;
@@ -277,30 +278,26 @@ header {
         width: 80px;
         height: 30px;
     }
+}
+
+@media (max-height:500px) {
+    .weapper.active-popup {
+        display: flex;
     }
 
-@media (max-height:500px)       
-    {
-
-        .weapper.active-popup {
-            display: flex;
-        }
-
-        .weapper {
-            top: 30px;
-        }
-
+    .weapper {
+        top: 30px;
     }
 
-    @media  (max-width:500px)       
-    {
+}
 
-        .weapper.active-popup {
-            display: flex;
-        }
-
-        .weapper {
-            top: 30px;
-        }
-
+@media (max-width:500px) {
+    .weapper.active-popup {
+        display: flex;
     }
+
+    .weapper {
+        top: 30px;
+    }
+
+}
